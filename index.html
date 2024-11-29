@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!-- creating a to-do-list -->
+
+    <!-- conatiner banao -->
+     <div id="main-container">
+        <h1>TO-DO-LIST</h1>
+<input type="text" id="textinput" placeholder="enter the text">
+<button>add</button>
+<button>delete</button>
+
+     </div>
+</body>
+</html>
+
+
+
+
+<!-- 
+
+The first version of HTML was released in 1991 along with the first web browser and web server. 
+HTML stands for Hypertext Markup Language. But what does that mean exactly? 
+Hypertext is text which 
+contains links to other text. Markup refers to tags and elements used within a document. For now, let's 
+just focus on some of the basics of HTML. HTML is simply a text file with a specific structure that consists 
+of elements and tags. Also take note that HTML files usually have a dot HTML suffix. For instance, when you 
+visit a website, the first page that is returned to the browser is often called index.html. -->
+
+
+<!-- 
+
+Simple HTML tags
+There are many tags available in HTML. Here you will learn about common tags that you'll use as a developer.
+
+Headings
+Headings allow you to display titles and subtitles on your webpage.
+
+12345678
+<body>
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+</body>
+The following displays in the web browser:
+
+Heading style displayed in browser
+Paragraphs
+Paragraphs contain text content.
+
+12345
+<p>
+   This paragraph
+   contains a lot of lines
+   but they are ignored.
+</p>
+The following displays in the web browser: 
+
+Paragraph style displayed in browser 
+Note that putting content on a new line is ignored by the web browser.
+
+
+Line Breaks
+As you've learned, line breaks in the paragraph tag line are ignored by HTML. Instead, they must be specified using the <br> tag. The <br> tag does not need a closing tag.
+
+12345
+<p>
+   This paragraph<br>
+   contains a lot of lines<br>
+   and they are displayed.
+</p>
+The following displays in the web browser: 
+
+Line breaks displayed in browser 
+Strong
+Strong tags can be used to indicate that a range of text has importance.
+
+123
+<p>
+   No matter how much the dog barks: <strong>don't feed him chocolate</strong>.
+</p>
+The following displays in the web browser: 
+
+Text with strong tag displayed in browser 
+Bold
+Bold tags can be used to draw the reader's attention to a range of text.
+
+123
+<p>
+   The primary colors are <b>red</b>, <b>yellow</b> and <b>blue</b>.
+</p>
+The following displays in the web browser: 
+
+Bold text displayed in browser 
+The following displays in the web browser: 
+
+Text with strong tag displayed in browser 
+Bold tags should be used to draw attention but not to indicate that something is more important. Consider the following example:
+
+1
+The three core technologies of the Internet are <b>HTML</b>, <b>CSS</b> and <b>Javascript</b>.
+The following displays in the web browser: 
+
+Bold text displayed in browser 
+Emphasis
+Emphasis tags can be used to add emphasis to text.
+
+123
+<p>
+   Wake up <em>now</em>!
+</p>
+The following displays in the web browser: 
+
+Text with emphasis tag displayed in browser 
+Italics
+Italics tags can be used to offset a range of text.
+
+123
+<p>
+   The term <i>HTML</i> stands for HyperText Markup Language.
+</p>
+The following displays in the web browser: 
+
+Italic text displayed in browser 
+Emphasis vs. Italics
+By default both tags will have the same visual effect in the web browser. The only difference is the meaning.
+
+Emphasis tags stress the text contained in them. Let's explore the following example:
+
+1
+I <em>really</em> want ice cream.
+The following displays in the web browser: 
+
+Text with emphasis tag displayed in browser. 
+Italics represent off-set text and should be used for technical terms, titles, a thought or a phrase from another language, for example:
+
+1
+My favourite book is <i>Dracula</i>.
+The following displays in the web browser: 
+
+Italic text displayed in browser
+Screen readers will not announce any difference if an italics tag is used.
+
+Lists
+You can add lists to your web pages. There are two types of lists in HTML.
+
+Lists can be unordered using the <ul> tag. List items are specified using the <li> tag, for example:
+
+123456
+<ul>
+   <li>Tea</li>
+   <li>Sugar</li>
+   <li>Milk</li>
+</ul>
+
+This displays in the web browser as:
+
+Bullet style displayed in the browser img10
+Lists can also be ordered using the <ol> tag. Again, list items are specified using the <li> tag.
+
+12345
+<ol>
+   <li>Rocky</li>
+   <li>Rocky II</li>
+   <li>Rocky III</li>
+</ol>
+This displays as the following in the web browser.
+
+Numbered list style displayed in browser img11
+Div tags
+A <div> tag defines a content division in a HTML document. It acts as a generic container and has no effect on the content unless it is styled by CSS.
+
+The following example shows a <div> element that contains a paragraph element:
+
+123
+<div>
+   <p>This is a paragraph inside a div</p>
+</div>
+This displays as the following in the web browser.
+
+Div displayed in browser img12
+It can be nested inside other elements, for example:
+
+12345
+<div>
+   <div>
+      <p>This is a paragraph inside a div that’s inside another div</p>
+   </div>
+</div>
+This displays in the web browser as:
+
+Div inside a dive displayed in browser 
+As mentioned, the div has no impact on content unless it is styled by CSS. Let’s add a small CSS rule that styles all divs on the page.
+
+Don't worry about the meaning of the CSS just yet, you'll explore CSS further in a later lesson. In summary, you're applying a rule that adds a border and some visual spacing to the element.
+
+1234567891011
+<style>
+   div {
+      border: 1px solid black;
+      padding: 2px;
+   }
+</style>
+<div>
+   <div>
+      <p>This is a paragraph inside stylized divs</p>
+   </div>
+
+This displays in the web browser as:
+
+Paragraph in stylized div displayed in browser img13
+Div elements are an important part of building webpages. More advanced usage of div elements will be explored in another course.
+
+Comments
+If you want to leave a comment in the code for other developers, it can be added as:
+
+ This is a comment --> 
+
+<!-- The comment will not be displayed in the web browser. - -->
+
+
+
+
+
+
+
+<!-- an HTML document must be represented in a certain way, so that JavaScript code can query and update it, to do this we use 
+the document object model. In this video, I will unpack what the DOM is, how it is created and how JavaScript interacts with t
+
+he DOM to make sites dynamic. When your web browser receives an HTML page, it constructs a DOM to represent it. DOM stands for
+ Document Object Model and it is simply a tree, structure or model of the objects in your HTML file. To understand the DOM, I want 
+ you to think of a simple HTML page, remember that an HTML document has opening and closing tags for the document and the head. And 
+ inside the head tags you have title tags, then you have the body and inside the body there might be elements such as div tags. Okay, 
+ 
+ now, let me guide you through how a DOM would be generated, the DOM has a series of objects each representing a single HTML element.
+  At the root of the DOM is the html object and it contains the head and body object. From there, the head object houses the title object 
+  and the title object contains its text object. The body object contains the two div objects, the first div houses, the h1 object which 
+  again houses its text object. The second div object contains the paragraph object which contains its text object. In summary, all the
+   elements in the HTML file are represented as objects in the document object model. I just took you through a very simple webpage, 
+   webpages typically have hundreds of elements. Can you imagine how complex the DOM of a highly interactive modern web page is? You as 
+   a developer can use JavaScript to access and modify the DOM to make your webpages dynamic. In fact, in a later course you will learn 
+   
+   how to access and modify the structure of the DOM and its elements in different ways. Now that you know what the DOM is and how it is 
+   referenced, let me briefly explain common DOOM and JavaScript uses. For each element, you can access the HTML attributes and content, 
+   this means you can update the existing content that is displayed in the web browser. For instance, you could write some JavaScript to 
+   
+   update the seconds, minutes and hours of a digital clock on a website. Or if you develop a movie streaming website, you can write code 
+   that responds to user actions such as clicking mouse over scrolling and so on. In this way you can allow a preview of the movie to play 
+   when the user hovers the mouse over the movie's poster. Or you can think of a log in page, when users click the Login button, you can 
+   disable the button so that it cannot be clicked again. The web application would bring them to a new web page or would re-enable the button, if a log in error occurred. You can even add DOM objects to dynamically add new HTML content to a live web page. For instance, you can add an error message to a form if the user inserts invalid data, DOM objects can also be deleted which will remove the corresponding HTML displayed in the browser. Think of a to-do list on a website, you can remove an item from the list when the user clicks on it. Another major use of JavaScript and the DOM is to animate the HTML elements. This can be quite complex depending on the animation but there are many libraries available that aim to simplify this. For example, when a 
+   page first loads, you can fade in the page contents or when a user receives an instant message, a notification can pop up in the web browser. Many JavaScript libraries and frameworks rely on the DOM, one of these libraries is the react library. By now, you know what the DOM is, how it is constructed and the wonderful 
+things web developers can do with it to create modern interactive websites. -->
